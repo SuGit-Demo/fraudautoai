@@ -19,7 +19,7 @@ def printMessage(message):
   #Execute if the HTML returns back a POST method
   if request.method == 'POST':
     #return render_template will call an HTML page to the user in this case 'post.html' which by default located in the 'templates' directory
-    return render_template('post.html',message='This page is called through a POST method')
+    return render_template('result.html',message='This page is called through a POST method')
   #'index.html' will be called first in this view function, only when there is a POST, then 'post.html' will be called
   return render_template('index.html',message=message)
 
